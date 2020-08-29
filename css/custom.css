@@ -10,7 +10,7 @@ img.site-link__img{
 }
 @media (max-width: 768px){
     .site-logo {
-        /* background: #96ca2d; */
+        /* background: #1854a3; */
     }
     img.st{
         display: block;
@@ -118,7 +118,7 @@ _____________________ */
     
 }
 #owl-demo .owl-prev:hover, #owl-demo .owl-next:hover{
-    background: #96ca2d;
+    background: black;
 }
 
 @media screen and (min-width: 360px){

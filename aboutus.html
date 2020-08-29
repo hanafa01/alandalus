@@ -43,159 +43,7 @@
 		<style>
         
       </style>   
-		<script language="JavaScript">
-      
-function FrontPage_Form1_Validator(theForm)
-{
 
-  if (theForm.fname.value == "")
-  {
-    alert("Please enter a value for the \" Name\" field.");
-    theForm.fname.focus();
-	    return (false);
-  }
-    
-
-    if (theForm.femail.value == "")
-  {
-    alert("Please enter a value for the \" Email Id\" field.");
-    theForm.femail.focus();
-	    return (false);
-  }
-  
-    if (theForm.fmessage.value == "")
-  {
-    alert("Please enter a value for the \" Message\" field.");
-    theForm.fmessage.focus();
-	    return (false);
-  }  
-  
-  
-return true;
-}
-//-->
-</script>
-<script type="text/javascript">
-			function validateForm() 
-			{
-				var textbox1 = document.getElementById('field_name');
-				var textbox2 = document.getElementById('field_email');
-				var textbox3 = document.getElementById('field_message');
-				if (textbox1.value == '') 
-				{
-					document.getElementById('name1').innerHTML = "Please enter the name."; 
-					return false;
-				}
-				else if(textbox1.value !== '' && textbox3.value == '')
-				{
-					document.getElementById('name1').innerHTML = ""; 
-					document.getElementById('message1').innerHTML = "Please enter the message."; 
-					
-				}
-				else if(textbox1.value !== '' && textbox3.value !== '')
-				{
-					document.getElementById('name1').innerHTML = ""; 
-					document.getElementById('message1').innerHTML = ""; 
-					validateEmail();
-				}
-			
-			}
-</script> 
-
-<script>
-function validateEmail() {
-    var x = document.forms["form-id"]["field_email"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) 
-	{
-        document.getElementById('email1').innerHTML = "Not a valid email address."; 
-        return false;
-    }
-	else
-	{	
-		var form = document.getElementById("form-id");
-
-		form.submit();
-	}
-}
-</script>
-<script type="text/javascript">
-         function generateCaptcha()
-         {
-             var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
-             var i;
-             for (i=0;i<4;i++){
-               var a = alpha[Math.floor(Math.random() * alpha.length)];
-               var b = alpha[Math.floor(Math.random() * alpha.length)];
-               var c = alpha[Math.floor(Math.random() * alpha.length)];
-               var d = alpha[Math.floor(Math.random() * alpha.length)];
-              }
-            var code = a + '' + b + '' + '' + c + '' + d;
-            document.getElementById("mainCaptcha").value = code
-          }
-          function CheckValidCaptcha(){
-              var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
-              var string2 = removeSpaces(document.getElementById('txtInput').value);
-              if (string1 == string2){
-				  
-			 document.getElementById('error').innerHTML = ""; 
-				  
-			  validateForm();
-			  
-         //alert("Form is validated Successfully");
-                return true;
-              }
-              else{       
-         document.getElementById('error').innerHTML = "Please enter a valid captcha."; 
-         //alert("Please enter a valid captcha.");
-                return false;
-          
-              }
-
-    }
-          function removeSpaces(string){
-            return string.split(' ').join('');
-          }
-</script>
-<script type="text/javascript">
-         function generateCaptcha()
-         {
-             var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
-             var i;
-             for (i=0;i<4;i++){
-               var a = alpha[Math.floor(Math.random() * alpha.length)];
-               var b = alpha[Math.floor(Math.random() * alpha.length)];
-               var c = alpha[Math.floor(Math.random() * alpha.length)];
-               var d = alpha[Math.floor(Math.random() * alpha.length)];
-              }
-            var code = a + '' + b + '' + '' + c + '' + d;
-            document.getElementById("mainCaptcha").value = code
-          }
-          function CheckValidCaptcha(){
-              var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
-              var string2 = removeSpaces(document.getElementById('txtInput').value);
-              if (string1 == string2){
-				  
-			 document.getElementById('error').innerHTML = ""; 
-				  
-			  validateForm();
-			  
-         //alert("Form is validated Successfully");
-                return true;
-              }
-              else{       
-         document.getElementById('error').innerHTML = "Please enter a valid captcha."; 
-         //alert("Please enter a valid captcha.");
-                return false;
-          
-              }
-
-    }
-          function removeSpaces(string){
-            return string.split(' ').join('');
-          }
-</script>
 		
 		<style type="text/css">
 			.carousel-caption h3
@@ -291,15 +139,8 @@ function validateEmail() {
 		<script type="text/javascript" src="js/smartslider-simple-type-frontend.min303e.js?1505987614"></script>
 		<script type="text/javascript" src="js/n2-ss-2b0b8.js?1505987773"></script>
 	<script type="text/javascript">window.n2jQuery.ready((function($){window.nextend.ready(function(){new N2Classes.SmartSliderSimple('#n2-ss-2',{"admin":false,"translate3d":1,"callbacks":"","align":"normal","isDelayed":0,"load":{"fade":1,"scroll":0},"playWhenVisible":1,"playWhenVisibleAt":0.5,"responsive":{"desktop":1,"tablet":1,"mobile":1,"onResizeEnabled":true,"type":"fullwidth","downscale":1,"upscale":1,"minimumHeight":600,"maximumHeight":3000,"maximumSlideWidth":3000,"maximumSlideWidthLandscape":3000,"maximumSlideWidthTablet":3000,"maximumSlideWidthTabletLandscape":3000,"maximumSlideWidthMobile":3000,"maximumSlideWidthMobileLandscape":3000,"maximumSlideWidthConstrainHeight":0,"forceFull":1,"forceFullHorizontalSelector":"","constrainRatio":1,"verticalOffsetSelectors":"","focusUser":0,"focusAutoplay":0,"deviceModes":{"desktopPortrait":1,"desktopLandscape":0,"tabletPortrait":1,"tabletLandscape":0,"mobilePortrait":1,"mobileLandscape":0},"normalizedDeviceModes":{"unknownUnknown":["unknown","Unknown"],"desktopPortrait":["desktop","Portrait"],"desktopLandscape":["desktop","Portrait"],"tabletPortrait":["tablet","Portrait"],"tabletLandscape":["tablet","Portrait"],"mobilePortrait":["mobile","Portrait"],"mobileLandscape":["mobile","Portrait"]},"verticalRatioModifiers":{"unknownUnknown":1,"desktopPortrait":1,"desktopLandscape":1,"tabletPortrait":1,"tabletLandscape":1,"mobilePortrait":1,"mobileLandscape":1},"minimumFontSizes":{"desktopPortrait":4,"desktopLandscape":4,"tabletPortrait":4,"tabletLandscape":4,"mobilePortrait":4,"mobileLandscape":4},"ratioToDevice":{"Portrait":{"tablet":0.7,"mobile":0.5},"Landscape":{"tablet":0,"mobile":0}},"sliderWidthToDevice":{"desktopPortrait":1920,"desktopLandscape":1920,"tabletPortrait":1344,"tabletLandscape":0,"mobilePortrait":960,"mobileLandscape":0},"basedOn":"combined","tabletPortraitScreenWidth":800,"mobilePortraitScreenWidth":440,"tabletLandscapeScreenWidth":800,"mobileLandscapeScreenWidth":440,"orientationMode":"width_and_height","scrollFix":0,"overflowHiddenPage":0,"desktopPortraitScreenWidth":1200},"controls":{"scroll":0,"drag":1,"touch":"horizontal","keyboard":1,"tilt":0},"lazyLoad":0,"lazyLoadNeighbor":0,"blockrightclick":0,"maintainSession":0,"autoplay":{"enabled":0,"start":1,"duration":8000,"autoplayToSlide":-1,"autoplayToSlideIndex":-1,"allowReStart":0,"pause":{"click":1,"mouse":"0","mediaStarted":1},"resume":{"click":0,"mouse":0,"mediaEnded":1,"slidechanged":0}},"layerMode":{"playOnce":0,"playFirstLayer":1,"mode":"skippable","inAnimation":"mainInEnd"},"parallax":{"enabled":1,"mobile":0,"is3D":0,"animate":1,"horizontal":"mouse","vertical":"mouse","origin":"slider","scrollmove":"both"},"background.parallax.tablet":0,"background.parallax.mobile":0,"initCallbacks":[],"allowBGImageAttachmentFixed":false,"bgAnimations":{"global":[{"type":"Flat","tiles":{"delay":0,"sequence":"ForwardDiagonal"},"main":{"type":"both","duration":1,"zIndex":2,"current":{"ease":"easeOutCubic","opacity":0}}}],"speed":"normal"},"mainanimation":{"type":"horizontal","duration":800,"delay":0,"ease":"easeOutQuad","parallax":1,"shiftedBackgroundAnimation":0},"carousel":1,"dynamicHeight":0});new N2Classes.SmartSliderWidgetArrowImage("n2-ss-2",1,0.7,0.5)})}));</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172426504-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-172426504-1');
-</script>
+
 </head>
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script>
@@ -379,7 +220,7 @@ function validateEmail() {
 														
 													</li>
 																																				<li id="menu-item-4326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4326 "><a href="contactus.html">Contact Us</a></li>
-											<!-- <li id="menu-item-4326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4326 current-menu-item current_page_item"><a href="https://www.instagram.com/invites/contact/?i=1ivr9wz8m4jce&utm_content=3l85mga" target="_blank" style="padding: 33px 15px;"><img src="images/insta-logo.png" width="25px;" /></a></li> -->
+										
 										</ul>		
 									</div>
 								</nav><!-- #site-navigation -->
@@ -514,7 +355,7 @@ market.
                 <div class="info">
                     <h4 class="text-center">Growth phases of the company</h4>
                     <p>
-					VInception: Class Roll Co was established in Cairo in the Arab
+					VInception: ALANDALUS was established in Cairo in the Arab
 Republic of Egypt in the year 2005 AD and we are commi�ed
 to offer the highest class of products and the best services.
 				</p>
@@ -689,8 +530,7 @@ Arab Republic of Egypt, which was at
 first simply an idea by its founders who
 were all under the umbrella of success
 by almighty Allah and a strong determination towards stability, and this stability has always been the main goal of our
-establishment, which became (Class
-Roll Trading Establishment - Class Roll)
+establishment, which became (ALANDALUS Trading Establishment - ALANDALUS)
 for External Curtains and Accordions –
 and with grace from Allah, the Establishment has enjoyed for many reasons
 a quick spread amid the Egyptian community in general and the customers in
@@ -730,12 +570,12 @@ all new developments in this field.
                             <h3 class="title">A SHINING NAME IN
 THIS FIELD</h3>
                             <p class="description">
-                                With the entry of Class Roll to the competitive phase of with the large international companies and establishments, it
+                                With the entry of ALANDALUS to the competitive phase of with the large international companies and establishments, it
 occupied an advanced position among
 these establishments and a shining
 name in this field, and to reflect this
 large development and with the increase of the size of sales and the large
-demand, the management of Class Roll
+demand, the management of ALANDALUS
 Establishment called for restructuring
 inside and outside the Establishment,
 and its first comprehensive factory was
@@ -744,7 +584,7 @@ skilled technicians in the manufacturing world and the Establishment has
 started a historic phase – and within
 a shorty period of time it was able to
 manufacture all its products and the Establishment has entered the manufacturing world and its product bears the
-logo of the Establishment (Class Roll). 
+logo of the Establishment (ALANDALUS). 
 							</p>
                         </div>
                     </div>
@@ -755,7 +595,7 @@ logo of the Establishment (Class Roll).
 ESTABLISHED</h3>
                             <p class="description">
                                 The Establishment continued its success until the start of the year 2009 AD,
-where the management of Class Roll
+where the management of ALANDALUS
 decided to expand its activities outside
 Egypt to reach the Arab and Europeans countries, and the choice of the
 Arabian launch point was settled to be
@@ -781,8 +621,7 @@ Arab Republic of Egypt, which was at
 first simply an idea by its founders who
 were all under the umbrella of success
 by almighty Allah and a strong determination towards stability, and this stability has always been the main goal of our
-establishment, which became (Class
-Roll Trading Establishment - Class Roll)
+establishment, which became (ALANDALUS Trading Establishment - ALANDALUS)
 for External Curtains and Accordions –
 and with grace from Allah, the Establishment has enjoyed for many reasons
 a quick spread amid the Egyptian community in general and the customers in

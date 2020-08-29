@@ -13,7 +13,7 @@
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Bitmap Photography.";
+    $subject = "You have a message from your Website.";
 
     $logo = 'img/logo.png';
     $link = '#';
@@ -26,6 +26,7 @@
 	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
 	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
 	$body .= "</tr>";
+	$body .= "<tr><td style='border:none;'><strong>Number:</strong> {$number}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
 	$body .= "<tr><td></td></tr>";
 	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
@@ -33,5 +34,6 @@
 	$body .= "</body></html>";
 
     $send = mail($to, $subject, $body, $headers);
+    echo "<script type='text/javascript'>window.location.href = 'index.html';</script>";
 
 ?>
