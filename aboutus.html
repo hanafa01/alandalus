@@ -165,11 +165,183 @@
         }
 
         .menu-toggle:hover {
-          color: #1854a3;
+          color: #96ca2d;
         }
       }
 
   }
+
+  .carousel-caption h3 {
+      color: #fff !important;
+      text-align: center;
+      font-family: 'montserrat';
+      color: #ffffff;
+      font-size: 50px;
+      text-shadow: none;
+      line-height: 2.5;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: none;
+      text-align: center;
+
+      word-spacing: normal;
+
+    }
+
+    .carousel-caption {
+      top: 40%;
+    }
+
+    .full-screen {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media(max-width:767px) {
+      .carousel-caption {
+        top: 30%;
+      }
+
+      .carousel-caption h3 {
+        font-size: 50px;
+      }
+    }
+
+    .n2-ss-spinner-simple-white-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -20px;
+      background: #fff;
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 1000;
+    }
+
+    .n2-ss-spinner-simple-white {
+      outline: 1px solid RGBA(0, 0, 0, 0);
+      width: 100%;
+      height: 100%;
+    }
+
+    .n2-ss-spinner-simple-white:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      margin-top: -11px;
+      margin-left: -11px;
+    }
+
+    .n2-ss-spinner-simple-white:not(:required):before {
+      content: '';
+      border-radius: 50%;
+      border-top: 2px solid #333;
+      border-right: 2px solid transparent;
+      animation: n2SimpleWhite .6s linear infinite;
+      -webkit-animation: n2SimpleWhite .6s linear infinite;
+    }
+
+    @keyframes n2SimpleWhite {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes n2SimpleWhite {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    .recentcomments a {
+      display: inline !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .topbanner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      opacity: 0.3;
+      height: 100px;
+      visibility: visible;
+      z-index: 1;
+    }
+
+    @media(max-width:1024px) {
+      .topbanner {
+        visibility: hidden;
+      }
+
+    }
+
+    @media(max-width:1024px) {
+      .site-header {
+        background-color: #fff !important;
+      }
+
+      .menu-toggle:hover {
+        color: #1854a3 !important;
+      }
+    }
+
+    .elementor-4059 .elementor-element.elementor-element-89z7kcm {
+      background-image: url("images/sofab-g.jpg");
+    }
+
+    .owl-carousel .owl-item img {
+      min-height: 230px;
+    }
+
+    @media (min-width: 1200px) {
+      .tm-testi__item-body p:before {
+        position: absolute;
+        left: 0px;
+        top: -4px;
+      }
+
+      .tm-testi__item-body p {
+        padding-left: 40px;
+      }
+
+      .elementor- footer {
+        padding-left: 40px;
+      }
+
+      .owl-carousel .owl-item img {
+        margin-left: 30px;
+      }
+
+      .elementor- footer {
+        display: block;
+        text-align: center;
+      }
+
+      .tm-testi__item cite {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+
+    @media (min-width: 992px) {
+
+      .widget_nav_menu .menu {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        margin-top: 0;
+
+      }
+    }
 
   </style>
   <script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
@@ -431,7 +603,7 @@
               <nav id="site-navigation" class="main-navigation" role="navigation">
                 <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
                   <i class="menu-toggle__icon fa fa-bars"></i>
-                  <i style="left: 60px;" class="menu-off__icon fa fa-times"></i>
+                  <i class="menu-off__icon fa fa-times" style="position: absolute; left: 55px; top: 22px;"></i>
                   <span>القائمة</span>
                 </button>
                 <div class="main-menu__wrap">
