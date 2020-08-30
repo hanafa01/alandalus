@@ -186,6 +186,67 @@
           -webkit-transform: rotate(360deg);
         }
       }
+
+      @media(max-width:1024px) {
+        .site-header {
+          background-color: #fff !important;
+        }
+
+        .menu-toggle:hover {
+          color: #96ca2d;
+        }
+      }
+
+      .topbanner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+        opacity: 0.3;
+        height: 100px;
+        visibility: visible;
+        z-index: 1;
+      }
+
+      @media(max-width:1024px) {
+        .topbanner {
+          visibility: hidden;
+        }
+
+      }
+
+      #box {
+        border: 1px solid rgb(253, 150, 81);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+        background: rgb(253, 150, 81);
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #000000;
+      }
+
+
+      .term_conditions.top {
+        border-top: 3px solid #ddd;
+      }
+
+      .term_conditions {
+        -moz-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+        -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+        -o-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+        box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+        background: #ffffff;
+        padding: 12px 30px;
+        border: 2px solid #e5e5e587;
+        /* background: #fff !important; */
+        /* box-shadow: 0px 7px 10px rgba(0,0,0,0.1); */
+        /* margin-top: 26px; */
+        padding-top: 20px;
+      }
     </style>
     <script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
     <script type='text/javascript' src='js/jquery-migrate.min330a.js?ver=1.4.1'></script>
@@ -446,37 +507,9 @@
   onload="generateCaptcha();">
   <div id="page" class="site">
     <style>
-      @media(max-width:1024px) {
-        .site-header {
-          background-color: #fff !important;
-        }
 
-        .menu-toggle:hover {
-          color: #96ca2d;
-        }
-      }
     </style>
     <header id="masthead" class="site-header minimal transparent" role="banner">
-      <style>
-        .topbanner {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          background: #000;
-          opacity: 0.3;
-          height: 100px;
-          visibility: visible;
-          z-index: 1;
-        }
-
-        @media(max-width:1024px) {
-          .topbanner {
-            visibility: hidden;
-          }
-
-        }
-      </style>
       <div class="topbanner">
       </div>
       <div class="top-panel invert">
@@ -500,7 +533,7 @@
               <nav id="site-navigation" class="main-navigation" role="navigation">
                 <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
                   <i class="menu-toggle__icon fa fa-bars"></i>
-                  <i class="menu-off__icon fa fa-times"></i>
+                  <i class="menu-off__icon fa fa-times" style="position: absolute; left: 55px; top: 22px;"></i>
                   <span>القائمة</span>
                 </button>
                 <div class="main-menu__wrap">
@@ -509,10 +542,7 @@
                     <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="aboutus.html">معلومات عنا</a></li>
 
                     <li id="menu-item-4450" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home menu-item-has-children menu-item-4450"><a href="curtains.html">منتجاتنا</a>
-
                     </li>
-
-
                     <li id="menu-item-4326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4326 current-menu-item current_page_item"><a href="contactus.html">إتصل بنا</a></li>
 
                   </ul>
@@ -541,8 +571,6 @@
               <header class="entry-header">
                 <h1 class="entry-title screen-reader-text">Contacts</h1>
               </header><!-- .entry-header -->
-
-
               <div class="entry-content builder_on">
                 <div class="elementor elementor-22">
                   <div class="elementor-inner">
@@ -559,9 +587,6 @@
                                       <div class="elementor-text-editor elementor-clearfix">
                                         <h2 style="color: #ffffff;">إتصل بنا
                                         </h2>
-
-
-
                                       </div>
                                     </div>
                                   </div>
@@ -587,50 +612,13 @@
                           </div>
                         </div>
                       </section>
-
-
                       <!------ Include the above in your HEAD tag ---------->
-
-
-
-                      <style>
-                        #box {
-                          border: 1px solid rgb(253, 150, 81);
-                          box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
-                          background: rgb(253, 150, 81);
-                          border-radius: 4px;
-                          margin-bottom: 20px;
-                        }
-
-                        h2 {
-                          text-align: center;
-                          color: #000000;
-                        }
-
-
-                        .term_conditions.top {
-                          border-top: 3px solid #ddd;
-                        }
-
-                        .term_conditions {
-                          -moz-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-                          -webkit-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-                          -o-box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-                          box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
-                          background: #ffffff;
-                          padding: 12px 30px;
-                          border: 2px solid #e5e5e587;
-                          /* background: #fff !important; */
-                          /* box-shadow: 0px 7px 10px rgba(0,0,0,0.1); */
-                          /* margin-top: 26px; */
-                          padding-top: 20px;
-                        }
-                      </style>
+                      
                       <div class="container">
                         <div class="row">
-                          <div class="col-md-offset-1 col-lg-6 col-md-6">
+                          <div style="direction: ltr;" class="col-md-offset-1 col-lg-6 col-md-6">
 
-                            <div class="float-right term_conditions top">
+                            <div  class="float-right term_conditions top">
                               <h3>إبقى على تواصل</h3>
                               <p style="font-size: 15px;"><i class="fa fa-home" style="font-size:30px;"></i>&nbsp; الرياض - الروضة - شارع خالد بن الوليد السعودية
                               </p>
@@ -721,7 +709,6 @@
                                 <!-- Text input-->
 
                                 <div class="form-group">
-
                                   <div class="col-md-12 inputGroupContainer">
                                     <div class="input-group">
                                       <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -731,17 +718,13 @@
                                 </div>
 
                                 <div class="form-group">
-
                                   <div class="col-md-12">
-                                    <button type="submit" class="btn btn-warning pull-right">كلمني<span class="glyphicon glyphicon-send"></span></button>
+                                    <button type="submit" class="btn btn-warning pull-right">كلمني&nbsp;&nbsp;<span class="glyphicon glyphicon-send"></span></button>
                                   </div>
                                 </div>
 
                               </fieldset>
                             </form>
-
-
-
 
                             <section data-id="7xjc8gw" class="elementor-element elementor-element-7xjc8gw elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
                               data-element_type="section">
@@ -821,19 +804,13 @@
                     <li id="menu-item-4549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-4059  menu-item-4549 wow fadeInDown"><a href="index.html">الصفحة الرئيسية</a></li>
                     <li id="menu-item-867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-867 wow fadeInDown"><a href="aboutus.html">معلومات عنا</a></li>
                     <li id="menu-item-866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-866 wow fadeInDown"><a href="curtains.html">ستائر</a></li>
-                    <li id="menu-item-866" class="menu-item menu-
-
-			item-type-post_type menu-item-object-page menu-item-866 wow fadeInDown"><a href="contactus.html">إتصل بنا</a></li>
-
+                    <li id="menu-item-866" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-866 wow fadeInDown"><a href="contactus.html">إتصل بنا</a></li>
                   </ul>
-
               </div>
             </aside>
             <aside id="Devaa_contact_information_widget-3" class="col-xs-12 col-sm-4 col-md-4  widget contact-information-widget">
               <h6 class="widget-title wow fadeInUp">إتصل بنا</h6>
-              <ul class="contact-information-widget__inner">
-
-
+              <ul  class="contact-information-widget__inner">
                 <li class="contact-information__item contact-information__item--icon wow fadeInDown" style="padding-right:20px;">
                   <a href=""> <b> alandalus.curtains.co@gmail.com </b></a> <span class="icon fa fa-envelope"></span> </li>
                 <li class="contact-information__item contact-information__item--icon wow fadeInDown" style="padding-right:20px;">

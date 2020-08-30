@@ -22,15 +22,6 @@
   <link rel='stylesheet' id='material-icons-css' href='css/material-icons.min3601.css?ver=2.2.0' type='text/css' media='all' />
   <link rel='stylesheet' id='magnific-popup-css' href='css/magnific-popup.minf269.css?ver=1.0.1' type='text/css' media='all' />
   <link rel='stylesheet' id='Devaa-theme-style-css' href='css/style_18a54.css?ver=1.0.0' type='text/css' media='all' />
-  <style>
-    body.error404 {
-      background-image: url();
-    }
-
-    .header-wrapper {
-      background-image: url();
-    }
-  </style>
   <link rel='stylesheet' id='dashicons-css' href='css/dashicons.min7bcd.css?ver=4.8.3' type='text/css' media='all' />
   <link rel='stylesheet' id='cherry-projects-styles-css' href='css/styles_1374a.css?ver=1.2.10' type='text/css' media='all' />
   <link rel='stylesheet' id='cherry-google-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%7CMontserrat%3A400%2C700%2C800%7CMerriweather%3A700&amp;subset=latin&amp;ver=4.8.3' type='text/css' media='all' />
@@ -45,12 +36,20 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" href="css/n2-ss-2ac60.css?1507892790" media="screen, print" />
   <link rel="stylesheet" href="css/mohsin.css">
-  <style>
-
-  </style>
-
+  <link rel="icon" href="#/uploads/2017/08/cropped-favicon-90x90.png" sizes="32x32" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/new.css">
 
   <style type="text/css">
+
+    body.error404 {
+      background-image: url();
+    }
+
+    .header-wrapper {
+      background-image: url();
+    }
+
     .carousel-caption h3 {
       color: #fff !important;
       text-align: center;
@@ -63,7 +62,6 @@
       font-style: normal;
       text-decoration: none;
       text-align: center;
-
       word-spacing: normal;
 
     }
@@ -137,20 +135,47 @@
         -webkit-transform: rotate(360deg);
       }
     }
-  </style>
-  <script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
-  <script type='text/javascript' src='js/jquery-migrate.min330a.js?ver=1.4.1'></script>
-  <style type="text/css">
+
     .recentcomments a {
       display: inline !important;
       padding: 0 !important;
       margin: 0 !important;
     }
+
+    .topbanner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #000;
+      opacity: 0.3;
+      height: 100px;
+      visibility: visible;
+      z-index: 1;
+    }
+
+    @media(max-width:1024px) {
+      .topbanner {
+        visibility: hidden;
+      }
+
+      @media(max-width:1024px) {
+        .site-header {
+          background-color: #fff !important;
+        }
+
+        .menu-toggle:hover {
+          color: #96ca2d;
+        }
+      }
+
+  }
+
   </style>
+  <script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
+  <script type='text/javascript' src='js/jquery-migrate.min330a.js?ver=1.4.1'></script>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic">
-  <link rel="icon" href="#/uploads/2017/08/cropped-favicon-90x90.png" sizes="32x32" />
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
-  <link rel="stylesheet" type="text/css" href="css/new.css">
+  
   <script type="text/javascript">
     window.nextend = {
       localization: {},
@@ -386,39 +411,7 @@
 <body class="home page-template-default page page-id-4059 header-layout-fullwidth content-layout-fullwidth footer-layout-fullwidth blog-grid-2-cols position-fullwidth sidebar-1-4 elementor-default elementor-page elementor-page-4059"
   onload="generateCaptcha();">
   <div id="page" class="site">
-    <style>
-      @media(max-width:1024px) {
-        .site-header {
-          background-color: #fff !important;
-        }
-
-        .menu-toggle:hover {
-          color: #96ca2d;
-        }
-      }
-    </style>
-
     <header id="masthead" class="site-header minimal transparent" role="banner">
-      <style>
-        .topbanner {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          background: #000;
-          opacity: 0.3;
-          height: 100px;
-          visibility: visible;
-          z-index: 1;
-        }
-
-        @media(max-width:1024px) {
-          .topbanner {
-            visibility: hidden;
-          }
-
-        }
-      </style>
       <div class="topbanner">
       </div>
 
@@ -438,7 +431,7 @@
               <nav id="site-navigation" class="main-navigation" role="navigation">
                 <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
                   <i class="menu-toggle__icon fa fa-bars"></i>
-                  <i class="menu-off__icon fa fa-times"></i>
+                  <i class="menu-off__icon fa fa-times" style="position: absolute; left: 55px; top: 22px;"></i>
                   <span>القائمة</span>
                 </button>
                 <div class="main-menu__wrap">
@@ -524,26 +517,13 @@
                           </div>
                         </div>
                       </section>
-
-
                       <!------ Include the above in your HEAD tag ---------->
-
-
-
-
-                      <style>
-
-                      </style>
-
-
-
                       <div class="container" style="margin-bottom:20px;">
                         <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="">
 
-                              <div class="" style="font-size: 15px;
-    text-align: justify;">
+                              <div class="" style="font-size: 15px; text-align: justify;">
 
                                 <p>
                                   نحن مؤسسة بدأت في جمهورية مصر العربية وكان خيارنا هو العمل في صناعة الستائر للفن الحقيقي في هذا المجال. بدأنا عام ٢٠٠٦ في القاهرة ثم إفتتحنا فرعاً ثانياً في الرياض عاصمة المملكة العربيّة السعودية، ولكي نكسب رضا
@@ -563,8 +543,6 @@
                               </div>
                             </div>
                           </div>
-
-
                         </div>
                       </div>
                       <div class="container" style="margin-bottom:20px;">
@@ -576,8 +554,6 @@
                                 <h4 class="text-center">مراحل نمو الشركة</h4>
                                 <p>
                                   التأسيس: تأسست شركة الأندلس في القاهرة بجمهورية مصر العربية في العام ٢٠٠٥ م ونحن ملتزمون بتقديم أعلى فئة من المنتجات وأفضل الخدمات.
-
-
                                 </p>
                               </div>
                             </div>
@@ -590,22 +566,17 @@
                                 </h4>
                                 <p>
                                   أحد أهدافنا الرئيسية هو كسب ثقة العميل وقد اكتسبنا هذه الثقة التي لا تقدر بثمن من خلال تقديم أفضل أنواع المواد وأفضل الحرفيين والتّسليم في الوقت المحدد.
-
-
                                 </p>
                               </div>
                             </div>
                           </div>
                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                             <div class="box_1">
-
                               <div class="info">
                                 <h4 class="text-center">فتح سوق جديد </h4>
                                 <p>
                                   انطلاقا من رؤية الشركة التي تعتمد على التطوير والانتشار تم إفتتاح سوق جديد في مدينة الرياض بالمملكة العربية السعودية نظرا للتطور المستمر للسوق السعودي، وبالتالي قمنا بافتتاح فرعنا في عام ٢٠٠٨ م لخدمة عملاء جدد. وكسب
                                   ثقتهم.
-
-
                                 </p>
                               </div>
                             </div>
@@ -617,14 +588,13 @@
                               <div class="info">
                                 <h4 class="text-center">بناء شراكات مميزة </h4>
                                 <p>
-                                  لتحقيق النجاح المنشود، كان علينا بناء شراكات قوية ومؤثرة مع الشركات المصنعة الرئيسية للمواد العالمية في مجال الستائر والمنسوجات وأن نكون شركاء لنا في النجاح وأن نقدم منتجاً راضياً للعميل الذي يستحقه.
+                                  لتحقيق النجاح المنشود، كان علينا بناء شراكات قوية ومؤثرة مع الشركات المصنعة الرئيسية للمواد العالمية في مجال الستائر والمنسوجات وأن يكون شركاء لنا في النجاح وأن نقدم منتجاً راضياً للعميل الذي يستحقه.
                                 </p>
                               </div>
                             </div>
                           </div>
                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                             <div class="box_1">
-
                               <div class="info">
                                 <h4 class="text-center">نمو</h4>
                                 <p>
@@ -668,11 +638,7 @@
                                   <h3 class="title">تقييم اﻹحتياجات </h3>
                                   <p>
                                     يتم ذلك من خلال المتطلبات الفنية للعميل وتصوره لما هو مطلوب.
-
-
-
                                   </p>
-
                                 </div>
                               </div>
                               <div class="space"></div>
@@ -684,7 +650,6 @@
                                 <div class="image"><i class="fa fa-eye"></i></div>
                                 <div class="info">
                                   <h3 class="title">تصميم الحلول
-
                                   </h3>
                                   <p>
                                     نحاول ترجمة متطلبات العميل إلى حلول ممكنة من خلال توفير تصاميم مناسبة من المحترفين لنصل إلى أفضل الحلول لكي تحصل على لمسة من الجمال إلى المكان.
@@ -706,10 +671,7 @@
                                   <p>
                                     من خلال ثقتنا في المنتجات التي نقدمها والمواد التي نستخدمها، تقدم الشركة ضماناً شاملاً على منتجاتنا لفترات طويلة حيث أننا حريصون على تقديم أفضل خدمة ما بعد البيع، حيث يتمتع بعضها بضمان لمدة خمس سنوات ولدى الآخرين
                                     ضمان لمدة عشر سنوات.
-
-
                                   </p>
-
                                 </div>
                               </div>
                               <div class="space"></div>
@@ -717,11 +679,7 @@
                           </div>
                         </div>
                       </div>
-
-
                       <main>
-
-
                         <div class="container">
                           <h3 class="card-title text-center">التاريخ</h3>
                           <div class="row">
@@ -749,7 +707,6 @@
                                       يعود الفضل في تأسيس المؤسسة إلى خمسة فنيين مهرة ومدربين وعناصر إدارية ذات خبرة عالية في الإدارة، وشهدت بداية عام ٢٠٠٧ م أول بداية حقيقية لعملية التوسّع والتطوير داخل مصر بإضافة أنواع ومواد جديدة من الستائر
                                       لنشاطها وهو الرول والعمود والمعدن وهذه الإضافة الضرورية جاءت في هذا التوقيت لمواكبة حركة التطور العالمية في عالم المنسوجات التي تدخل في صناعة الرول بجميع أصنافها والتي تبعها عن كثب من قبل المؤسسة لتحديث منتجاتها
                                       ومواكبة كل التطورات الجديدة في هذا المجال.
-
                                     </p>
                                   </div>
                                 </div>
@@ -800,32 +757,19 @@
                                     </p>
                                   </div>
                                 </div>
-
-
                               </div>
                             </div>
                           </div>
                         </div>
-
                       </main>
-
-
-
-
-
-
                     </div>
                   </div>
                 </div><!-- .entry-content -->
-
-
             </article><!-- #post-## -->
-
           </main><!-- #main -->
 
           <div id="after-loop-area" class="after-loop-area widget-area"></div>
         </div><!-- #primary -->
-
 
       </div><!-- .row -->
 

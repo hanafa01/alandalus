@@ -185,6 +185,34 @@
         -webkit-transform: rotate(360deg);
       }
     }
+
+    @media(max-width:1024px) {
+      .site-header {
+        background-color: #fff !important;
+      }
+
+      .menu-toggle:hover {
+        color: #96ca2d;
+      }
+    }
+      .topbanner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+        opacity: 0.3;
+        height: 100px;
+        visibility: visible;
+        z-index: 1;
+      }
+
+      @media(max-width:1024px) {
+        .topbanner {
+          visibility: hidden;
+        }
+
+  }
   </style>
   <script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
   <script type='text/javascript' src='js/jquery-migrate.min330a.js?ver=1.4.1'></script>
@@ -444,39 +472,7 @@
 <body class="home page-template-default page page-id-4059 header-layout-fullwidth content-layout-fullwidth footer-layout-fullwidth blog-grid-2-cols position-fullwidth sidebar-1-4 elementor-default elementor-page elementor-page-4059"
   onload="generateCaptcha();">
   <div id="page" class="site">
-    <style>
-      @media(max-width:1024px) {
-        .site-header {
-          background-color: #fff !important;
-        }
-
-        .menu-toggle:hover {
-          color: #96ca2d;
-        }
-      }
-    </style>
-
     <header id="masthead" class="site-header minimal transparent" role="banner">
-      <style>
-        .topbanner {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          background: #000;
-          opacity: 0.3;
-          height: 100px;
-          visibility: visible;
-          z-index: 1;
-        }
-
-        @media(max-width:1024px) {
-          .topbanner {
-            visibility: hidden;
-          }
-
-        }
-      </style>
       <div class="topbanner">
       </div>
 
@@ -496,7 +492,7 @@
               <nav id="site-navigation" class="main-navigation" role="navigation">
                 <button class="menu-toggle" aria-controls="main-menu" aria-expanded="false">
                   <i class="menu-toggle__icon fa fa-bars"></i>
-                  <i class="menu-off__icon fa fa-times"></i>
+                  <i class="menu-off__icon fa fa-times" style="position: absolute; left: 55px; top: 22px;"></i>
                   <span>القائمة</span>
                 </button>
                 <div class="main-menu__wrap">
@@ -552,9 +548,6 @@
                                       <div class="elementor-text-editor elementor-clearfix">
                                         <h2 style="color: #ffffff;">منتجاتنا
                                         </h2>
-
-
-
                                       </div>
                                     </div>
                                   </div>
