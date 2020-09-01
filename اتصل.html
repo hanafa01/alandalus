@@ -293,190 +293,6 @@
     <script type="text/javascript" src="js/smartslider-frontend.min303e.js?1505987614"></script>
     <script type="text/javascript" src="js/smartslider-simple-type-frontend.min303e.js?1505987614"></script>
     <script type="text/javascript" src="js/n2-ss-2b0b8.js?1505987773"></script>
-    <script type="text/javascript">
-      window.n2jQuery.ready((function($) {
-        window.nextend.ready(function() {
-          new N2Classes.SmartSliderSimple('#n2-ss-2', {
-            "admin": false,
-            "translate3d": 1,
-            "callbacks": "",
-            "align": "normal",
-            "isDelayed": 0,
-            "load": {
-              "fade": 1,
-              "scroll": 0
-            },
-            "playWhenVisible": 1,
-            "playWhenVisibleAt": 0.5,
-            "responsive": {
-              "desktop": 1,
-              "tablet": 1,
-              "mobile": 1,
-              "onResizeEnabled": true,
-              "type": "fullwidth",
-              "downscale": 1,
-              "upscale": 1,
-              "minimumHeight": 600,
-              "maximumHeight": 3000,
-              "maximumSlideWidth": 3000,
-              "maximumSlideWidthLandscape": 3000,
-              "maximumSlideWidthTablet": 3000,
-              "maximumSlideWidthTabletLandscape": 3000,
-              "maximumSlideWidthMobile": 3000,
-              "maximumSlideWidthMobileLandscape": 3000,
-              "maximumSlideWidthConstrainHeight": 0,
-              "forceFull": 1,
-              "forceFullHorizontalSelector": "",
-              "constrainRatio": 1,
-              "verticalOffsetSelectors": "",
-              "focusUser": 0,
-              "focusAutoplay": 0,
-              "deviceModes": {
-                "desktopPortrait": 1,
-                "desktopLandscape": 0,
-                "tabletPortrait": 1,
-                "tabletLandscape": 0,
-                "mobilePortrait": 1,
-                "mobileLandscape": 0
-              },
-              "normalizedDeviceModes": {
-                "unknownUnknown": ["unknown", "Unknown"],
-                "desktopPortrait": ["desktop", "Portrait"],
-                "desktopLandscape": ["desktop", "Portrait"],
-                "tabletPortrait": ["tablet", "Portrait"],
-                "tabletLandscape": ["tablet", "Portrait"],
-                "mobilePortrait": ["mobile", "Portrait"],
-                "mobileLandscape": ["mobile", "Portrait"]
-              },
-              "verticalRatioModifiers": {
-                "unknownUnknown": 1,
-                "desktopPortrait": 1,
-                "desktopLandscape": 1,
-                "tabletPortrait": 1,
-                "tabletLandscape": 1,
-                "mobilePortrait": 1,
-                "mobileLandscape": 1
-              },
-              "minimumFontSizes": {
-                "desktopPortrait": 4,
-                "desktopLandscape": 4,
-                "tabletPortrait": 4,
-                "tabletLandscape": 4,
-                "mobilePortrait": 4,
-                "mobileLandscape": 4
-              },
-              "ratioToDevice": {
-                "Portrait": {
-                  "tablet": 0.7,
-                  "mobile": 0.5
-                },
-                "Landscape": {
-                  "tablet": 0,
-                  "mobile": 0
-                }
-              },
-              "sliderWidthToDevice": {
-                "desktopPortrait": 1920,
-                "desktopLandscape": 1920,
-                "tabletPortrait": 1344,
-                "tabletLandscape": 0,
-                "mobilePortrait": 960,
-                "mobileLandscape": 0
-              },
-              "basedOn": "combined",
-              "tabletPortraitScreenWidth": 800,
-              "mobilePortraitScreenWidth": 440,
-              "tabletLandscapeScreenWidth": 800,
-              "mobileLandscapeScreenWidth": 440,
-              "orientationMode": "width_and_height",
-              "scrollFix": 0,
-              "overflowHiddenPage": 0,
-              "desktopPortraitScreenWidth": 1200
-            },
-            "controls": {
-              "scroll": 0,
-              "drag": 1,
-              "touch": "horizontal",
-              "keyboard": 1,
-              "tilt": 0
-            },
-            "lazyLoad": 0,
-            "lazyLoadNeighbor": 0,
-            "blockrightclick": 0,
-            "maintainSession": 0,
-            "autoplay": {
-              "enabled": 0,
-              "start": 1,
-              "duration": 8000,
-              "autoplayToSlide": -1,
-              "autoplayToSlideIndex": -1,
-              "allowReStart": 0,
-              "pause": {
-                "click": 1,
-                "mouse": "0",
-                "mediaStarted": 1
-              },
-              "resume": {
-                "click": 0,
-                "mouse": 0,
-                "mediaEnded": 1,
-                "slidechanged": 0
-              }
-            },
-            "layerMode": {
-              "playOnce": 0,
-              "playFirstLayer": 1,
-              "mode": "skippable",
-              "inAnimation": "mainInEnd"
-            },
-            "parallax": {
-              "enabled": 1,
-              "mobile": 0,
-              "is3D": 0,
-              "animate": 1,
-              "horizontal": "mouse",
-              "vertical": "mouse",
-              "origin": "slider",
-              "scrollmove": "both"
-            },
-            "background.parallax.tablet": 0,
-            "background.parallax.mobile": 0,
-            "initCallbacks": [],
-            "allowBGImageAttachmentFixed": false,
-            "bgAnimations": {
-              "global": [{
-                "type": "Flat",
-                "tiles": {
-                  "delay": 0,
-                  "sequence": "ForwardDiagonal"
-                },
-                "main": {
-                  "type": "both",
-                  "duration": 1,
-                  "zIndex": 2,
-                  "current": {
-                    "ease": "easeOutCubic",
-                    "opacity": 0
-                  }
-                }
-              }],
-              "speed": "normal"
-            },
-            "mainanimation": {
-              "type": "horizontal",
-              "duration": 800,
-              "delay": 0,
-              "ease": "easeOutQuad",
-              "parallax": 1,
-              "shiftedBackgroundAnimation": 0
-            },
-            "carousel": 1,
-            "dynamicHeight": 0
-          });
-          new N2Classes.SmartSliderWidgetArrowImage("n2-ss-2", 1, 0.7, 0.5)
-        })
-      }));
-    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172426504-1"></script>
     <script>
@@ -545,7 +361,7 @@
                     </li>
                     <li id="menu-item-4326" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4326 current-menu-item current_page_item"><a href="اتصل.html">إتصل بنا</a></li>
 
-                    <li id="menu-item-4450" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home menu-item-has-children menu-item-4450"><a href="">Arabic / English</a></li>
+                    <li id="menu-item-4450" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home menu-item-has-children menu-item-4450"><a href="">English</a></li>
                   </ul>
                 </div>
               </nav><!-- #site-navigation -->
@@ -632,14 +448,11 @@
                                 جازان - امام البريد السعودي. السعودية</p>
                               <p style="font-size: 15px;"><i class="fa fa-home" style="font-size:30px;"></i>&nbsp; &nbsp;
 
-                                خميس مشيط - طريق الصناعية حشبال. السعودية
+                                خميس مشيط - طريق الصناعية هشبال. السعودية
 
                               </p>
                               <hr>
-                              <p style="font-size: 15px;"><i class="fa fa-envelope-o" style="font-size:30px;"></i>&nbsp; &nbsp;alandalus.curtains.co@gmail.com</p>
-
-                              <p style="font-size: 15px;"><i class="fa fa-envelope-o" style="font-size:30px;"></i>&nbsp; &nbsp;alandalus.curtains.co@outlook.com</p>
-
+                              <p style="font-size: 15px;"><i class="fa fa-envelope-o" style="font-size:30px;"></i>&nbsp; &nbsp;ahmed_awad@el-andalusia.com</p>
                               <hr>
                               <p style="font-size: 15px;"><i class="fa fa-phone" style="font-size:30px;"></i>&nbsp; &nbsp;+966 54 500 24 77</p>
 
@@ -647,11 +460,9 @@
 
                               <hr>
                               <p style="font-size: 15px;">
-                                <a href="منتجاتنا.html"><i class="fa fa-facebook" style="font-size:25px; color:#4267B2"></i></a>&nbsp; &nbsp; &nbsp;
-                                <a href="منتجاتنا.html"><i class="fa fa-twitter" style="font-size:25px; color:#6BD1F7;"></i></a>&nbsp; &nbsp; &nbsp;
-                                <a href="منتجاتنا.html"><i class="fa fa-google" style="font-size:25px; color:#ec2727;"></i></a>&nbsp; &nbsp; &nbsp;
-                                <a href="منتجاتنا.html"><i class="fa fa-instagram" style="font-size:25px; color:#e6405f;"></i></a>&nbsp; &nbsp; &nbsp;
-                                <a href="منتجاتنا.html"><i class="fa fa-linkedin" style="font-size:25px; color:#4b7fe8;"></i></a>
+                                <a href="https://www.facebook.com/el.andalusia.sa"><i class="fa fa-facebook" style="font-size:25px; color:#4267B2"></i></a>&nbsp; &nbsp; &nbsp;
+                                <a href="https://twitter.com/el_andalusia_sa"><i class="fa fa-twitter" style="font-size:25px; color:#6BD1F7;"></i></a>&nbsp; &nbsp; &nbsp;
+                                <a href="https://www.instagram.com/el.andalusia.sa"><i class="fa fa-instagram" style="font-size:25px; color:#e6405f;"></i></a>&nbsp; &nbsp; &nbsp;
                               </p>
 
                               <hr>
@@ -787,11 +598,11 @@
                   </li>
                   <li>
                     <span class="icon fa fa-home" style="color:#96ca2d;font-size:15px"></span>
-                    <b>جازان - امام البريد السعودي. السعودية</b>
+                    <b>جازان - أمام البريد السعودي. السعودية</b>
                   </li>
                   <li>
                     <span class="icon fa fa-home" style="color:#96ca2d;font-size:15px"></span>
-                    <b>خميس مشيط - طريق الصناعية حشبال. السعودية</b>
+                    <b>خميس مشيط - طريق الصناعية هشبال. السعودية</b>
                   </li>
                 </ul>
               </div>
@@ -815,18 +626,16 @@
                 <li class="contact-information__item contact-information__item--icon wow fadeInDown" style="padding-right:20px;">
                   <a href=""> <b> alandalus.curtains.co@gmail.com </b></a> <span class="icon fa fa-envelope"></span> </li>
                 <li class="contact-information__item contact-information__item--icon wow fadeInDown" style="padding-right:20px;">
-                  <a href=""> <b>alandalus.curtains.co@outlook.com</b> </a> <span class="icon fa fa-envelope"></span></li>
+                  <a href=""> <b>ahmed_awad@el-andalusia.com</b> </a> <span class="icon fa fa-envelope"></span></li>
                 <li class="contact-information__item contact-information__item--icon wow fadeInDown">
-                  <a href="#"> <b>+966 54 500 24 77 </b></a> <span class="icon fa fa-phone"></span></li>
+                  <a href="#"><b>٠٠٩٦٦&nbsp;٥٤&nbsp;٥٠&nbsp;٠٢&nbsp;٤&nbsp;٧٧</b></a> <span class="icon fa fa-phone"></span></li>
                 <li class="contact-information__item contact-information__item--icon wow fadeInDown">
-                  <a href="#"> <b>+966 50 99 88 6 54</b></a> <span class="icon fa fa-phone"></span> </li>
+                  <a href="#"> <b>٠٠٩٦٦&nbsp;٥٠&nbsp;٩٩&nbsp;٨٨&nbsp;٦&nbsp;٥٤</b></a> <span class="icon fa fa-phone"></span> </li>
               </ul> <br>
               <p style="font-size: 15px;">
-                <a href="منتجاتنا.html"><i class="fa fa-facebook" style="font-size:25px; color:#4267B2"></i></a>&nbsp; &nbsp; &nbsp;
-                <a href="منتجاتنا.html"><i class="fa fa-twitter" style="font-size:25px; color:#6BD1F7;"></i></a>&nbsp; &nbsp; &nbsp;
-                <a href="منتجاتنا.html"><i class="fa fa-google" style="font-size:25px; color:#ec2727;"></i></a>&nbsp; &nbsp; &nbsp;
-                <a href="منتجاتنا.html"><i class="fa fa-instagram" style="font-size:25px; color:#e6405f;"></i></a>&nbsp; &nbsp; &nbsp;
-                <a href="منتجاتنا.html"><i class="fa fa-linkedin" style="font-size:25px; color:#4b7fe8;"></i></a>
+                <a href="https://www.facebook.com/el.andalusia.sa"><i class="fa fa-facebook" style="font-size:25px; color:#4267B2"></i></a>&nbsp; &nbsp; &nbsp;
+                <a href="https://twitter.com/el_andalusia_sa"><i class="fa fa-twitter" style="font-size:25px; color:#6BD1F7;"></i></a>&nbsp; &nbsp; &nbsp;
+                <a href="https://www.instagram.com/el.andalusia.sa"><i class="fa fa-instagram" style="font-size:25px; color:#e6405f;"></i></a>&nbsp; &nbsp; &nbsp;
               </p>
 
         </div>
