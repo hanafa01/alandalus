@@ -18,10 +18,51 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <script type='text/javascript' src='js/jqueryb8ff.js?ver=1.12.4'></script>
   <script type='text/javascript' src='js/jquery-migrate.min330a.js?ver=1.4.1'></script>
+  <style type="text/css">
+    .recentcomments a {
+      display: inline !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    @media(max-width:1024px) {
+        .site-header {
+          background-color: #fff !important;
+        }
 
+        .menu-toggle:hover {
+          color: #1854a3 !important;
+        }
+      }
+  </style>
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <link rel="stylesheet" type="text/css" href="css/new.css">
-
+  <script type="text/javascript">
+    window.nextend = {
+      localization: {},
+      deferreds: [],
+      loadScript: function(url) {
+        n2jQuery.ready(function() {
+          var d = n2.Deferred();
+          nextend.deferreds.push(d);
+          n2.ajax({
+            url: url,
+            dataType: "script",
+            cache: true,
+            complete: function() {
+              setTimeout(function() {
+                d.resolve()
+              })
+            }
+          })
+        })
+      },
+      ready: function(cb) {
+        n2.when.apply(n2, nextend.deferreds).done(function() {
+          cb.call(window, n2)
+        })
+      }
+    };
+  </script>
   <script type="text/javascript" src="js/n2eb8d.js?1510416586"></script>
   <script type="text/javascript" src="js/nextend-frontend.min303e.js?1505987614"></script>
   <script type="text/javascript" src="js/smartslider-frontend.min303e.js?1505987614"></script>
